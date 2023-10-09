@@ -2,7 +2,7 @@
   <ul class="sidenav app-sidenav" :class="{open: isOpen}">
 
     <router-link
-        v-for="({title, url, exact }, index) in links"
+        v-for="({title, url, exact }) in links"
         :key="url"
         tag="li"
         active-class="active"
@@ -31,10 +31,4 @@ export default {
     }
   }
 }
-
-
 </script>
-
-<style scoped>
-
-</style>
